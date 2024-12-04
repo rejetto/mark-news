@@ -1,7 +1,8 @@
 'use strict';{
-    const { days, html } = HFS.getPluginConfig()
+    const { days, html, only } = HFS.getPluginConfig()
     const dt =days * 86400 * 1000
-    
+    const match = HFS.misc.makeMatcher(only, true)
+
     HFS.onEvent('afterEntryName', ({ entry }) =>
-        entry.t > Date.now() - dt && html)
+        entry.t > Date.now() - dt && match(entry.n) && html)
 }
