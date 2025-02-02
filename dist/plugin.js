@@ -1,4 +1,4 @@
-exports.version = 1.1
+exports.version = 1.2 // consider new keep-modified-time-uploading behaviour
 exports.description = "Mark files that are newer than the configured number of days"
 exports.apiRequired = 8 // getPluginConfig
 exports.frontend_js = "main.js"

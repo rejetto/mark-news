@@ -4,5 +4,5 @@
     const match = HFS.misc.makeMatcher(only, true)
 
     HFS.onEvent('afterEntryName', ({ entry }) =>
-        entry.t > Date.now() - dt && match(entry.n) && html)
+        Math.max(entry.c||0, entry.m||0) > Date.now() - dt && match(entry.n) && html)
 }
