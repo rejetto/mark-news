@@ -1,6 +1,6 @@
 # Mark-news
 
-HFS plugin to mark files that are newer than the configured number of days
+HFS plugin to mark files that are newer than the configured number of days. Decimals are supported.
 
 These are the options:
 
